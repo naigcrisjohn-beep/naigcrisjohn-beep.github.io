@@ -20,9 +20,9 @@
       }
 
       :root {
-        --primary-color: #000000;
+        --primary-color: #800080;
         --secondary-color: #ffffff;
-        --text-dark: #000000;
+        --text-dark: #800080;
         --text-light: #666666;
         --bg-light: #f5f5f5;
         --bg-white: #ffffff;
@@ -264,7 +264,8 @@
 
       .photo-container img {
         width: 100%;
-        max-width: 400px;
+        height: 500px;
+        max-width: 500px;
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         object-fit: cover;
@@ -283,6 +284,24 @@
         font-size: 3rem;
         color: #999;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ==================== ABOUT ME SECTION ==================== */
+      #about {
+        background: var(--bg-light);
+      }
+
+      .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .about-description {
+        font-size: 1.2rem;
+        color: var(--text-light);
+        line-height: 1.8;
+        margin-bottom: 2rem;
       }
 
       /* ==================== SKILLS SECTION ==================== */
@@ -652,7 +671,7 @@
         }
 
         .photo-placeholder {
-          max-width: 300px;
+          max-width: 350px;
         }
 
         .section-title {
@@ -676,6 +695,7 @@
         <a href="#home" class="navbar-logo">CJN</a>
         <ul class="nav-menu" id="navMenu">
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificates">Certificates</a></li>
@@ -733,6 +753,21 @@
       </div>
     </section>
 
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p class="about-description">
+            I am a passionate BSIT student from Central Philippines State
+            University Moises Padilla Campus, with a strong foundation in web
+            development technologies. My skills include HTML, JavaScript, and
+            CSS, which I use to create engaging and responsive web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- SKILLS SECTION -->
     <section id="skills">
       <div class="container">
@@ -776,7 +811,9 @@
               <span>📋</span>
             </div>
             <div class="project-content">
-              <h3 class="project-title">SSJ AND FLP ADVANCED ONLINE VOTING SYSTEM</h3>
+              <h3 class="project-title">
+                SSJ AND FLP ADVANCED ONLINE VOTING SYSTEM
+              </h3>
               <p class="project-description">
                 A comprehensive voting system designed for SSG and FLP elections
                 with secure authentication and real-time vote counting
